@@ -54,10 +54,10 @@ null,
     )
     ;
 
-    private String itemName;
-    private List<QualityRule> qualityRules;
-    private int maxQualityValue;
-    private int minQualityValue;
+    private final String itemName;
+    private final List<QualityRule> qualityRules;
+    private final int maxQualityValue;
+    private final int minQualityValue;
 
     GildedItemType(String itemName, List<QualityRule> qualityRules, int maxQualityValue, int minQualityValue) {
         this.itemName = itemName;

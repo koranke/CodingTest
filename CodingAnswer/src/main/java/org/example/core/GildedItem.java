@@ -28,7 +28,7 @@ public class GildedItem extends Item {
     }
 
     private boolean isFixedQuality(GildedItemType gildedItemType) {
-            return gildedItemType.getQualityRules() == null || gildedItemType.getQualityRules().size() == 0;
+            return gildedItemType.getQualityRules() == null || gildedItemType.getQualityRules().isEmpty();
     }
 
     public GildedItemType getGildedItemType() {

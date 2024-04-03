@@ -11,7 +11,7 @@ public class QualityRules {
         //sort rules by effective day asc
         List<QualityRule> sortedItems = qualityRules.stream()
             .sorted((item1, item2) -> item1.getEffectiveDayStart().compareTo(item2.getEffectiveDayStart()))
-            .collect(Collectors.toList());
+            .toList();
 
         //get lowest effective day rule based on sellIn value
         QualityRule qualityRule = sortedItems.stream()

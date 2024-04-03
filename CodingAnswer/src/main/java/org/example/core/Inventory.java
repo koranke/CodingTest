@@ -8,7 +8,7 @@ import java.util.List;
 public class Inventory {
 
     public static List<Item> load() {
-        List<Item> items = new ArrayList<Item>();
+        List<Item> items = new ArrayList<>();
         items.add(new GildedItem(GildedItemType.DexterityVest, 10, 20));
         items.add(new GildedItem(GildedItemType.AgedBrie, 2, 0));
         items.add(new GildedItem(GildedItemType.ElixirMongoose, 5, 7));
@@ -33,10 +33,10 @@ public class Inventory {
 
     public static void print(String message, List<Item> items) {
         System.out.println(message);
-        items.stream().forEach(item -> {
+        items.forEach(item -> {
             GildedItem gildedItem = (GildedItem) item;
             gildedItem.print();
         });
-        System.out.println("");
+        System.out.println();
     }
 }

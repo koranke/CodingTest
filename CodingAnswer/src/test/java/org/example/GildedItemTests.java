@@ -22,7 +22,7 @@ public class GildedItemTests {
     }
 
     @Test
-    public void testBasicUpdateQuality() throws Exception {
+    public void testBasicUpdateQuality() {
         GildedItem gildedItem = new GildedItem(GildedItemType.DexterityVest, 10, 1);
         gildedItem.updateQuality();
         Assert.assertEquals(gildedItem.getQuality(), 0);
